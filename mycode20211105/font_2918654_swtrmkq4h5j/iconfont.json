@@ -1,0 +1,37 @@
+{
+  "id": "2918654",
+  "name": "我的工商银行",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "577368",
+      "name": "淘宝",
+      "font_class": "taobao",
+      "unicode": "e755",
+      "unicode_decimal": 59221
+    },
+    {
+      "icon_id": "2932831",
+      "name": "房子",
+      "font_class": "fangzi",
+      "unicode": "e7ff",
+      "unicode_decimal": 59391
+    },
+    {
+      "icon_id": "4236183",
+      "name": "故宫",
+      "font_class": "gugong",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "17814549",
+      "name": "工商银行",
+      "font_class": "gongshangyinhang",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    }
+  ]
+}

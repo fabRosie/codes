@@ -1,0 +1,124 @@
+body,p,h2,h3,h1,h4,h5,h6,ol,ul,input,dl,dd,button{
+    margin: 0;
+    padding: 0;
+}
+/* 解决图片撑大3像素的问题 */
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/* 头部 */
+header{
+    height:45px;
+    line-height:45px;
+    color:white;
+    font-size:20px;
+    background:#00b38a;
+    text-align: center;
+}
+/* 登录 */
+.login{
+    height:43px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #e8e8e8;
+}
+.login p{
+    margin-left:17px;
+    font-size:15px;
+    color:#555555;
+}
+.login a{
+    height:30px;
+    width:84px;
+    color:#00b38a;
+    font-size:14px;
+    background:#f5f5f5;
+    border-radius: 30px;
+    line-height:30px;
+    text-align: center;
+    margin-right:16px;
+}
+/* 内容 */
+section{
+    display:flex;
+    justify-content: flex-start;
+    height:90px;
+    border-bottom:1px solid #e8e8e8;
+}
+section div{
+    flex:1;
+    line-height:1;
+}
+section img{
+    height:62px;
+    width:61px;
+    margin:14px 11px 16px 14px;
+}
+section h1{
+    color:#333333;
+    margin-top:18px;
+    font-size:17px;
+    margin-bottom:9px;
+    font-weight:bolder;
+}
+section p{
+    font-size:12px;
+    color:#333333;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content:space-between;
+}
+section p span{
+    font-size:16px;
+    color:#00b38a;
+    margin-right:14px;
+}
+section div>span{
+    font-size:11px;
+    color:#888888;
+}
+nav{
+    display: flex;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:45px;
+    background: #f6f6f6;
+    justify-content: flex-start;
+    line-height:45px;
+    text-align: center;
+}
+nav a{
+    color:#c2cfcc;
+}
+nav li{
+    width:33.3%;
+}
+.active{
+    background:#e7f3f0;
+}
+.active a{color:#00b38a;}
+/* 版权 */
+.copyright{
+    color:#333333;
+    font-size:10px;
+    margin-top:20px;
+    margin-bottom:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.copyright a{
+    color:#333333;
+    font-size:12px;
+    margin-right:10px;
+    margin-top:11px;
+}

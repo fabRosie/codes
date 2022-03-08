@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会员登记</title>
+    <style>
+        td{
+            border:2px solid palevioletred;
+            border-spacing:0;
+            color:palevioletred;
+            text-align:center;
+            height:50px;
+        }
+        table{
+            border:1px solid black;
+            border-collapse:collapse;
+        }
+        .span1{
+            width:100px;
+        }
+        .span2{
+            width:150px;
+        }
+    </style>
+</head>
+<body>
+    <table rules="groups">
+        <colgroup span="1" class="span1"></colgroup>
+        <colgroup span="1" class="span2"></colgroup>
+        <colgroup span="1" class="span1"></colgroup>
+        <colgroup span="1" class="span2"></colgroup>
+        <tr>
+            <td>会员姓名</td>
+            <td></td>
+            <td>出生日期</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>身份证号</td>
+            <td colspan="3"></td>
+            <!-- <td>3</td>
+            <td>4</td> -->
+        </tr>
+        <tr>
+            <td>通信地址</td>
+            <td colspan="3"></td>
+            <!-- <td>3</td>
+            <td>4</td> -->
+        </tr>
+        <tr>
+            <td>联系电话</td>
+            <td colspan="3"></td>
+            <!-- <td>3</td>
+            <td>4</td> -->
+        </tr>
+        <tr>
+            <td>会员卡号</td>
+            <td colspan="3"></td>
+            <!-- <td>3</td>
+            <td>4</td> -->
+        </tr>
+    </table>
+</body>
+</html>

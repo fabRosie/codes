@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .top{
+            height: 30px;
+            background-color: red;
+        }
+        .header{
+            height: 100px;
+            background-color: green;
+        }
+        .nav{
+            height: 60px;
+            background-color: orange;
+            /* 吸顶效果 */
+            position: sticky;
+            top: 0px;
+            z-index: 99;
+        }
+        .content{
+            height: 8000px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="header"></div>
+    <div class="nav">导航</div>
+    <div class="content">文本内容</div>
+</body>
+</html>
+<!-- 
+    粘性定位是相对定位和固定定位的结合体
+    默认的时候是相对定位,是占位
+    当滚动条往下拖动之后,此时就变成了固定定位,必须配合top  left  right bottom
+ -->

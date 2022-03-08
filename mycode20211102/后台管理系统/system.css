@@ -1,0 +1,85 @@
+body,p,h2,h3,h1,h4,h5,h6,ol,ul,input,dl,dd,button{
+    margin: 0;
+    padding: 0;
+}
+/* 解决图片撑大3像素的问题 */
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body,html{
+    height:100%;
+}
+/* 导航 */
+.nav{
+    height:50px;
+    background:#418bca;
+    position:relative;
+}
+.nav ul{
+    position:absolute;
+    top:0;
+    left:210px;
+}
+.nav li{
+    float:left;
+    font-size:16px;
+    line-height:50px;
+    background:url(images/pc.jpg) no-repeat left center;
+    padding:0 25px;
+}
+.nav a{
+    color:white;
+}
+.nav p{
+    font-size:12px;
+    float:right;
+    position:absolute;
+    top:0;
+    right:20px;
+    line-height:50px;
+}
+.nav p a{
+    padding-right:30px;
+}
+.nav p a::after{
+    content:url(images/arc.jpg);
+    margin-left:5px;
+    line-height:50px;
+}
+/* 左边菜单 */
+.content{
+    height:100%;
+    background:yellow;
+    height:calc(100% - 50px);
+}
+.menu{
+    height:100%;
+    width:189px;
+    background:#f2f2f2;
+    float:left;
+    padding-left:15px;
+}
+.menu p{
+    height:39px;
+    line-height:39px;
+    text-align:left;
+    padding-left:22px;
+    background:url(images/set.jpg) no-repeat left center;
+    font-size:12px;
+    border-bottom:1px solid #e5e5e5;
+}
+.menu p a{
+    color:#585858;
+}
+.table{
+    float:left;
+    height:100%;
+    width:calc(100% - 189px);
+    background:orange;
+}

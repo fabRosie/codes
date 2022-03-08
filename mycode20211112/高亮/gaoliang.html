@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高亮</title>
+    <style>
+        body,p{
+            padding:0;
+            margin:0;
+        }
+        body{background:black;}
+        img{
+            display:block;
+        }
+        div{
+            height:497px;
+            width:999px;
+            display:grid;
+            grid-template-columns:repeat(333px 165px 165px 333px);
+            grid-template-rows:repeat(3,165px);
+            grid-template-areas:
+            'a1 a1 a1 a2'
+            'a1 a1 a1 a3'
+            'a4 a5 a6 a3';
+            margin:0 auto;
+        }
+        div:hover p{opacity:0.5; transition:.4s;}
+        div p:hover{opacity:1;}
+        p:nth-of-type(1){grid-area:a1;}
+        p:nth-of-type(2){grid-area:a2;}
+        p:nth-of-type(3){grid-area:a3;}
+        p:nth-of-type(4){grid-area:a4;}
+        p:nth-of-type(5){grid-area:a5;}
+        p:nth-of-type(6){grid-area:a6;}
+        p:nth-of-type(7){grid-area:a7;}
+        
+    </style>
+</head>
+<body>
+    <div>
+        <p><img src="images/a1.png" alt=""></p>
+        <p><img src="images/a2.png" alt=""></p>
+        <p><img src="images/a3.png" alt=""></p>
+        <p><img src="images/a4.png" alt=""></p>
+        <p><img src="images/a5.png" alt=""></p>
+        <p><img src="images/a6.png" alt=""></p>
+        <p><img src="images/a7.png" alt=""></p>
+    </div>
+</body>
+</html>

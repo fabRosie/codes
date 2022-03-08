@@ -1,0 +1,41 @@
+body,p,h2,h3,h1,h4,h5,h6,ol,ul,input,dl,dd,button{
+    margin: 0;
+    padding: 0;
+}
+/* 解决图片撑大3像素的问题 */
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/*版心 */
+.w1140{
+    width: 1140px;
+    margin: 0 auto;
+}
+/* 导航 */
+header img{float:left;}
+header nav{
+    float:right;
+    margin-right:-45px;
+}
+header nav a{
+    line-height:83px;
+    font-size:12px;
+    color:black;
+}
+header nav li{
+    float:left;
+    width:90px;
+}
+/* banner */
+.banner{
+    height:476px;
+}
+.banner img{
+    margin:0 auto;
+}

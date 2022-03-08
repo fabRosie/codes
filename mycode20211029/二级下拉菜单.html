@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二级下拉菜单</title>
+    <style>
+        body,ul,li{
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+        .nav{
+            background:yellow;
+            height:30px;
+            position:absolute;
+            top:46px;
+            left:27px;
+        }
+        li{
+            float:left;
+            width:101px;
+            height:30px;
+            background:#eeeeee;
+            text-align:center;
+            line-height:30px;
+            font-size:12px;
+            border-right:1px solid #fbfbfb;
+            /* position:relative; */
+        }
+        a{
+            font-size:12px;
+            text-decoration:none;
+            color:#333333;
+            width:101px;
+            height:30px;
+            display:block;
+        }
+        .nav ul{
+            position:relative;
+            display:none;
+        }
+        li:hover ul{
+            display:block;
+        }
+        .nav a:hover{
+            color:white;
+            text-decoration:underline;
+            background:#333333;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="#">首页</a></li>
+        <li>
+            <a href="#">产品中心</a>
+            <ul>
+                <li><a href="#">产品1</a></li>
+                <li><a href="#">产品2</a></li>
+                <li><a href="#">产品3</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">客户服务</a>
+           <ul>
+            <li><a href="#">服务1</a></li>
+            <li><a href="#">服务2</a></li>
+            <li><a href="#">服务3</a></li>
+           </ul>
+        </li>
+        <li><a href="#">联系我们</a></li>
+    </ul>
+</body>
+</html>

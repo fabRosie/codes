@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        
+        div{
+            height:432px;
+            width:470px;
+            border:1px solid black;
+            margin:50px auto 0;
+            overflow: hidden;
+        }
+        section{
+            width:470px;
+            margin:-432px auto;
+            animation:mymove infinite 1s steps(6);
+        }
+        p{
+            height:432px;
+            width:470px;
+        }
+        p:nth-of-type(1){background:url(images/person4.png) no-repeat top left;}
+        p:nth-of-type(2){background: url(images/person4.png) no-repeat top center;}
+        p:nth-of-type(3){background: url(images/person4.png) no-repeat top right;}
+        p:nth-of-type(4){background: url(images/person4.png) no-repeat center left;}
+        p:nth-of-type(5){background: url(images/person4.png) no-repeat center center;}
+        p:nth-of-type(6){background: url(images/person4.png) no-repeat center right;}
+        p:nth-of-type(7){background: url(images/person4.png) no-repeat bottom left;}
+        @keyframes mymove {
+            from{margin-top:-432px;}
+            to{margin-top:-3024px;}
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <section>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </section>
+    </div>
+</body>
+</html>

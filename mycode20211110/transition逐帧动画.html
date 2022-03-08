@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逐帧动画</title>
+    <style>
+        p{
+            height:150px;
+            width:150px;
+            float:left;
+            margin:10px;
+        }
+        .p1{
+            background:url(images/pad1-t.jpg) no-repeat;
+        }
+        .p2{
+            background:url(images/phone1-t.jpg) no-repeat;
+        }
+        .p3{
+            background:url(images/ren.jpg) no-repeat;
+        }
+        p:hover{
+            background-position: bottom;
+            transition:1s;
+            transition-timing-function: steps(19);
+        }
+    </style>
+</head>
+<body>
+    <p class="p1"></p>
+    <p class="p2"></p>
+    <p class="p3"></p>
+</body>
+</html>

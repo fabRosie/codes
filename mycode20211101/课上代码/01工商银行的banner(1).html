@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            height: 60px;
+            background-color: red;
+        }
+        .bannerbox{
+            height: 380px;
+            background-color: green;
+            border-bottom: 1px solid blue;
+            /* 现在加上overflow之后无效,因为bigpic此时的参照物不是父元素,所以此时溢出隐藏无效,所以想要生效,得让bigpic的参照物是父元素,所以此时需要给bigpic的父元素添加position:relative */
+            overflow: hidden;
+            position: relative;
+        }
+        .bigpic{
+            height: 380px;
+            width: 1900px;
+            background-color: orange;
+            position: absolute;
+            left: calc(50% - 950px);
+        }
+        .center{
+            width: 1000px;
+            height: 380px;
+            background: purple;
+            /* 方法1: */
+            /* position: relative;
+            margin: 0 auto; */
+            /* 方法2 */
+            position: absolute;
+            /* left: calc(50% - 500px);  */
+            left: 50%;
+            margin-left: -500px;
+            overflow: hidden;
+            /* 此时的写法,可以看出来版心是在上面的,如果给banner添加a,在版心的范围内点击是点击不了的,所以就得想办法让鼠标穿过该版心触发到下面的banner */
+            pointer-events: none;
+            /* 鼠标阻止效果设置为没有,设置鼠标穿透效果 */
+        }
+        .white{
+            width: 300px;
+            height: 300px;
+            background-color: white;
+            margin-top: 40px;
+            /* 设置鼠标指针穿透效果阻止一下 */
+            /* pointer-events:visible(默认值,阻止鼠标穿透)/none(设置鼠标可以穿透); */
+            pointer-events: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav"></div>
+    <div class="bannerbox">
+        <!-- 存放很多大图的 -->
+        <div class="bigpic">
+            <a href="http://www.baidu.com"><img src="banner.jpg"></a>
+        </div>
+        <!-- 版心 -->
+        <div class="center">
+            <div class="white"></div>
+        </div>
+    </div>
+</body>
+</html>

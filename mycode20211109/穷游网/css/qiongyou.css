@@ -1,0 +1,186 @@
+
+body,p,h2,h3,h1,h4,h5,h6,ol,ul,input,dl,dd,button,figure{
+    margin: 0;
+    padding: 0;
+}
+/* 解决图片撑大3像素的问题 */
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+html{
+    font-size: 32vw;
+}
+/* 头部 */
+header img{
+    width:100%;
+}
+header{
+    color:white;
+}
+header div{
+    position:absolute;
+    top:0;
+    font-size:0.11rem;
+    display:flex;
+    width:100%;
+    margin-top:0.13rem;
+}
+header span{
+    font-size:0.21rem;
+    color:white;
+    margin-left:0.13rem;
+    margin-right:0.25rem;
+}
+header div a+a{
+    background:rgba(0,0,0,0.5);
+    color:white;
+    height:0.25rem;
+    line-height:0.25rem;
+    text-align:center;
+    border-radius:0.25rem;
+    flex:1;
+    margin-right:0.13rem;
+}
+header div a+a span{
+    margin-right:0.04rem;
+    font-size:0.11rem;
+}
+/* 导航 */
+nav{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    margin-top:0.13rem;
+}
+nav li{
+    width:25%;
+    margin-bottom:0.16rem;
+}
+nav li img{
+    width:0.37rem;
+    display: block;
+    margin:0 auto 0.08rem;
+}
+nav li p{
+    font-size: 0.11rem;
+    text-align:center;
+}
+/* 门票 */
+section{
+    height:0.99rem;
+    background:#f5f5f5;
+    overflow: hidden;
+}
+section ul{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:0.13rem;
+}
+section ul li{
+    font-size:0.1rem;
+    width:33.3%;
+    display: flex;
+    align-items: center;
+    height:0.35rem;
+    border:1px #f5f5f5 solid;
+    box-sizing: border-box;
+    background:white;
+}
+section ul li img{
+    width:0.14rem;
+    height:0.14rem;
+    margin-left:0.11rem;
+    margin-right:0.1rem;
+}
+section ul li a{
+    color:#646464;
+}
+/* 精品折扣 */
+body>p{
+    margin-top:0.16rem;
+    margin-bottom:0.14rem;
+    font-size:0.13rem;
+    color:#444444;;
+    text-align: center;
+}
+/* 图片 */
+.travel{
+    display:flex;
+    flex-wrap:wrap;
+    padding-right:0.13rem;
+}
+.travel figure{
+    width:50%;
+    box-sizing: border-box;
+    font-size: 0.12rem;
+    padding-left:0.13rem;
+}
+.travel img{
+    width:100%;
+}
+.travel figure figcaption{
+    font-size:0.12rem;
+    color:#1f2023;
+    line-height:0.17rem;
+    margin-top:16px;
+}
+.travel figure p{
+    font-size:0.08rem;
+    color:#adadaf;
+    margin-bottom:0.2rem;
+}
+.travel figure p span{
+    color:#ff8579;
+    font-size:0.11rem;
+    font-weight:800;
+}
+/* 版权 */
+.copyright{
+    background:#f5f5f5;
+    color:#9ea3ab;
+    font-size:0.08rem;
+    line-height:0.17rem;
+    text-align:center;
+    padding-top:0.18rem;
+    padding-bottom:0.63rem;
+}
+.copyright a{
+    color:#656565;
+    margin:0.14rem; 
+}
+.copyright .active{
+    color:#9ea3ab;
+}
+/* 底部导航 */
+.menu span{
+    font-size:0.17rem;
+    margin-bottom: 0.07rem;
+}
+.menu p{
+    font-size:0.1rem;
+    margin-bottom: 0.05rem;
+}
+.menu{
+    width:100%;
+    display:flex;
+    font-size:0.1rem;
+    position:fixed;
+    bottom: 0;
+    background:white;
+}
+.menu a{
+    width:33.3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color:#6e6e6e;
+    padding-top:0.05rem;
+}

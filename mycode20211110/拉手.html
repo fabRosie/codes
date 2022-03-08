@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拉手</title>
+    <style>
+        body{
+        }
+        p,body{
+            margin:0;
+            padding:0;
+        }
+        div{
+            width:377px;
+            height:280px;
+            background:url(images/box_img2.png);
+            margin:10px auto 0;
+            text-align: center;
+            position:relative;
+            overflow: hidden;
+        }
+        .bg{
+            background:rgba(0,0,0,0);
+            width:377px;
+            height:280px;
+            transition:1s;
+            position:absolute;
+            top:0;
+        }
+        div:hover .bg{
+            background:rgba(0,0,0,0.7);
+        }
+        .text{
+            color:skyblue;
+            font-size:30px;
+            font-weight:bolder;
+            text-align: center;
+            line-height:1;
+            margin-top:-60px;
+            transition:1s;
+            position:absolute;
+            z-index:2;
+            width:100%;
+        }
+        div:hover .text{
+            margin-top:20px;
+        }
+        img{
+            position:absolute;
+            transition:1s;
+        }
+        img:nth-of-type(1){
+            left:-100px;
+            top:calc(50% - 40px);
+        }
+        img:nth-of-type(2){
+            right:-100px;
+            top:calc(50% - 37px/2)
+        }
+        div:hover img:nth-of-type(1){
+            left:calc(50% - 40px);
+        }
+        div:hover img:nth-of-type(2){
+            right:calc(50% - 37px/2);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p class="bg"></p>
+        <p class="text">商业咨询策划</p>
+        <img src="images/l_o.png" alt="">
+        <img src="images/r_f.png" alt="">
+    </div>
+    
+</body>
+</html>

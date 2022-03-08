@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5种表格</title>
+    <style>
+        p{
+            font-size:30px;
+            font-weight:bold;
+        }
+        .table1{
+            border:1px solid gray;
+            border-collapse: collapse;
+        }
+        .table1 td{
+            height:20px;
+            width:100px;
+            border:1px solid gray;
+        }
+        .table2{
+            border:3px solid black;
+            border-collapse:collapse;
+        }
+        .table2 td{
+            height:20px;
+            width:100px;
+            border:1px solid black;
+        }
+        .table3{
+            border:8px double black;
+            border-collapse:collapse;
+        }
+        .table3 td{
+            height:20px;
+            width:100px;
+            border:3px solid black;
+        }
+        .table4{
+            border:none;
+            border-spacing:10px;
+        }
+        .table4 td{
+            height:20px;
+            width:100px;
+            border:2px solid black;
+        }
+        .table5{
+            border:none;
+            border-collapse:collapse;
+        }
+        .table5 td{
+            height:20px;
+            width:100px;
+            border:2px solid black;
+            border-left:transparent;
+            border-right:transparent;
+        }
+        .table6{
+            border:5px solid gray;
+            border-spacing:10px;
+        }
+        .table6 td{
+            height:100px;
+            width:100px;
+            background:turquoise;
+        }
+        .table6 .last{
+            background:white;
+        }
+    </style>
+</head>
+<body>
+    <p>1-细线表格</p>
+    <table class="table1">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <p>2-粗框细线表格</p>
+    <table class="table2">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+    <p>3-双线表格</p>
+    <table class="table3">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <p>4-宫字格</p>
+    <table class="table4">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <p>5-单线表格</p>
+    <table class="table5">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <p>6-日历表格</p>
+    <table class="table6">
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td class="last"></td>
+            </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼠标悬停展示效果</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        img{
+            display: block;
+            height:298px;
+            width:359px;
+            position:absolute;
+            transition:all .5s;
+            top:5px;
+            left:5px;
+            z-index:1;
+        }
+        div{
+            border:1px solid #cccccc;
+            padding:5px;
+            box-sizing: border-box;
+            width:369px;
+            height:308px;
+            position: relative;
+            margin:50px;
+        }
+        div:hover img{
+            height:145px;
+            width:175px;
+            top:94px;
+            left:97px;
+        }
+        div:hover p:nth-of-type(3){
+            top:253px;
+        }
+        div:hover p:nth-of-type(1){
+            top:37px;
+        }
+        div:hover p:nth-of-type(2){
+            top:64px;
+        }
+        p{
+            position:absolute;
+            top:calc(50% - 20px);
+            left:calc(50% - 75px);
+            transition:all .5s;
+        }
+        p:nth-of-type(1){
+            font-size:20px;
+            font-weight:bolder;
+        }
+        p:nth-of-type(2){
+            font-size:18px;
+        }
+        p:nth-of-type(3){
+            height:40px;
+            font-size:18px;
+            background:red;
+            text-align: center;
+            width:150px;
+            line-height:40px;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/image01.jpg">
+        <p>Web Design</p>
+        <p>Rasty James</p>
+        <p>Take a Look</p>
+    </div>
+</body>
+</html>

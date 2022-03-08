@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H5新增加的标签</title>
+    <style>
+        body{
+            margin:0;
+        }
+        header{
+            height:100px;
+            background:aqua;
+        }
+        section{
+            height:500px;
+            width:1000px;
+            background:plum;
+            margin:0 auto;
+        }
+        footer{
+            height:50px;
+            background:darkolivegreen;
+        }
+        canvas{
+            height:300px;
+            width:300px;
+            background:gray;
+        }
+        input:enabled{
+            border:red 3px solid;
+        }
+        input:checked{
+            border:blue 3px solid;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <li>文字文字文字<mark>文字文字文字</mark></li>
+        <li><dialog open>对话框</dialog></li>
+        <li></li>
+        <li></li>
+        <canvas></canvas>
+        <embed src="videos/3theA.mp4" type="">
+        <video src="videos/chrome_japan.mp4" controls autoplay muted></video>
+        <audio src="music/赵大格 - 我在人民广场吃炸鸡 (Live).mp3" controls>您的浏览器</audio>
+    </nav>
+    <form action="">
+        邮箱：<input type="email"><input type="submit">
+        网址：<input type="url">
+        <input type="text" list="box" name="a" >
+        <datalist id="box">
+            <option>花</option>
+            <option>鸟</option>
+            <option>虫</option>
+            <option>鱼</option>
+        </datalist>
+        <select>
+            <option>1</option>
+            <option>1</option>
+            <option>1</option>
+            <option>1</option>
+        </select>
+    </form>
+    <form action="">
+        <input type="range">
+        <input type="date">
+        <input type="month">
+        <input type="week">
+        <input type="time">
+        <input type="datetime-local">
+        <input type="datetime">
+    </form>
+    <footer></footer>
+</body>
+</html>

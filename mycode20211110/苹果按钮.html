@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iphone button</title>
+    <style>
+        input{
+            appearance: none;
+            background:#D6D6D6;
+            height:60px;
+            width:120px;
+            border:none;
+            border-radius: 40px;
+            transition:1s;
+        }
+        input::after{
+            content:"";
+            display: block;
+            height:60px;
+            width:60px;
+            border-radius: 50%;
+            background:white;
+            box-shadow: 3px 0 3px black;
+            transition:.5s;
+        }
+        input:checked{
+            background: #40d940;
+        }
+        input:checked::after{
+            margin-left:60px;
+            box-shadow: -3px 0 3px black;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="checkbox">
+    </form>
+</body>
+</html>

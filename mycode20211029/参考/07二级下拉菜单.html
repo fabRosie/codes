@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* 1级默认的css样式 */
+        .nav{
+            height: 30px;
+            background-color: yellow;
+            margin-left: 27px;
+            margin-top: 46px;
+        }
+        .nav li{
+            width: 100px;
+            height: 30px;
+            background-color: #eee;
+            float: left;
+            list-style: none;
+            border-right: 1px solid #fbfbfb;
+            text-align: center;
+            line-height: 30px;
+            font-size: 14px;
+        }
+        .nav li a{
+            text-decoration: none;
+            color: #333;
+        }
+        .nav ul{
+            /* 想要2级竖着,那么2级就要受1级的控制,2级就不能脱离文档流,所以想要有定位,又不能脱离文档流,定位只能选择相对定位 */
+            /* position: relative; */
+            /* 当给2级添加了绝对定位之后,2级就脱离文档流,简单理解就是2飘了,不受父元素的控制,因为此时参照物是浏览器,不是父元素也就不会受1级li宽度的影响,所以此时2级的宽度就是内容宽度之和 */
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <!-- 第1步,先写默认的结构 -->
+    <!-- 1-1:默认的1级结构 -->
+    <ul class="nav">
+        <li><a href="#">首页1</a></li>
+        <li>
+            <a href="#">产品中心</a>
+            <!-- 1-2:默认2级的结构,现在写完之后2级的li竖着没有横着 -->
+            <!-- 从控制台上看2级li,也有浮动的样式,应该是横着过去的,但是现在看效果2级的li竖着呢 -->
+            <!-- 原因是因为结构是包含结构,此时2级li的父元素是ul,而ul的父元素是1级的li,1级li的宽度是100,也就是此时的2级ul宽度也是100,是因为100放不下3个li,所以2级的li是因为父元素宽度不够被挤下去的 -->
+            <ul>
+                <li><a href="#">产品中心1</a></li>
+                <li><a href="#">产品中心2</a></li>
+                <li><a href="#">产品中心3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">客户服务</a></li>
+        <li><a href="#">联系我们</a></li>
+    </ul>
+    <!-- 在没有放入图片的时候2级能看见,放入图片之后2级看不见了,原因是因为1级的高度只有30,所以2级是溢出的,溢出的不占空间,所以想要2级看得见需要用定位定上去,目前如果需要写的是竖着的2级,那么此时的2级不能脱离文档流,定位中不能脱离文档流的,只有相对定位,所以此时可以给2级的ul添加position:relative -->
+    <img src="扣丁课堂/images/banner.jpg">
+</body>
+</html>

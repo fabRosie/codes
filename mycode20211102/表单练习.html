@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+    <style>
+        textarea{
+            resize:none;
+            /* width:200px;
+            height:300px; */
+        }
+    </style>
+</head>
+<body>
+    <form action="http://www.baidu.com" name="information" method="get">
+        <fieldset>
+            <legend>个人信息</legend>
+           <label for="name"> 姓名：</label><input type="text" id="name">
+           <br>
+           <label for="address"> 地址：</label><input type="text" id="address">
+           <br>
+           <label for="born">出生：</label><select name="born" id="born">
+               <option value="bj">北京</option>
+               <option value="sh" selected>上海</option>
+               </select>
+            <label for="sex">性别：</label><select name="sex" id="sex">
+                <option value="mal">男</option>
+                <option value="femal">女</option>
+           </select>
+           <fieldset>
+               <legend>其他信息</legend>
+               <input type="file" multiple><br>
+               <lable for="intrest">你喜欢这个表单吗？</lable><br>
+               <input type="radio" checked value="like" id="intrest">喜欢
+               <input type="radio" value="dislike" id="intrest">不喜欢
+               <br>
+               你喜欢什么运动？<br>
+                <input type="checkbox" checked>足球
+                <input type="checkbox">篮球
+                <input type="checkbox">羽毛球<br>
+                请填写下你的建议？<br>
+                <textarea rows="8" cols="40"></textarea>
+           </fieldset>
+           <input type="submit" placeholder="提交">
+        </fieldset>
+    </form>
+</body>
+</html>

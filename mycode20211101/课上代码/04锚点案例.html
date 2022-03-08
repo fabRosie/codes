@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .bigbox{
+            width: 500px;
+            height: 375px;
+            background:red;
+            border: 3px solid blue;
+            margin: 30px;
+            position: relative;
+        }
+        .picbox{
+            width: 500px;
+            height: 375px;
+            background-color: yellow;
+            overflow: hidden;
+        }
+        .bigbox p{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
+        .bigbox p a{
+            width: 30px;
+            height: 30px;
+            display: block;
+            float: left;
+            margin: 5px;
+            background: rgba(0,0,0,0.6);
+            text-align: center;
+            line-height: 30px;
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="bigbox">
+        <div class="picbox">
+            <img src="images/img04.jpg" id="img1">
+            <img src="images/img05.jpg" id="img2">
+            <img src="images/img06.jpg" id="img3">
+            <img src="images/img07.jpg" id="img4">
+        </div>
+        <p>
+            <a href="#img1">1</a>
+            <a href="#img2">2</a>
+            <a href="#img3">3</a>
+            <a href="#img4">4</a>
+        </p>
+    </div>
+</body>
+</html>

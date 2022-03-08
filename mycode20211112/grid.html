@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        body,p{
+            padding:0;
+            margin:0;
+        }
+        body{
+            background:black;
+        }
+        div{
+            height:500px;
+            width:500px;
+            border:3px solid aquamarine;
+            background:thistle;
+            margin:20px auto;
+            display:grid;
+            grid-template-columns:repeat(3,100px);
+            grid-template-rows:repeat(3,100px);
+            /* grid-column-gap:10px; */
+            /* grid-row-gap:10px; */
+            grid-gap:10px;
+            /* place-items:center; */
+            /* align-items:center; */
+            /* justify-items:center; */
+            /* place-items:stretch; */
+            /* place-content:stretch; */
+            /* justify-content:end; */
+            place-content:center;
+            grid-template-areas:
+            'a1 a2 a3'
+            'b1 b2 b3'
+            'c1 c2 c3';
+        }
+        p{
+            background:pink;
+        }
+        p:nth-child(3){
+            background:palevioletred;
+            /* place-self:center; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        <p>6</p>
+        <p>7</p>
+        <p>8</p>
+        <p>9</p>
+    </div>
+</body>
+</html>

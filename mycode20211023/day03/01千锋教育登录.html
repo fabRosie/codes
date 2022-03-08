@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>千锋教育登录</title>
+    <style>
+        .bigbox{
+            width:400px;
+            height:420px;
+            background-color:#ffffff;
+            box-sizing:border-box;
+            padding:30px;
+            margin:0 auto;
+        }
+        .logo{
+            margin:0 auto;
+            display:block; 
+            float:none;
+        }
+        div img{
+            float:left;
+            
+        }
+        input{
+            height:25px;
+            padding-left:20px;
+            float:left;
+            border-width:0px;
+            outline:none;
+        }
+        div div{
+            margin-top:20px;
+            height:45px;
+            width:340px;
+            border-bottom:solid rgb(207, 207, 207) 1px;
+        }
+        .box-password{
+            border:0px;
+        }
+        span a{
+            color:#0199ff;
+            padding-left:10px;
+            text-decoration:none;
+        }
+        button{
+            margin-top:10px;
+            height:40px;
+            width:340px;
+            background-color:#4f93fe;
+            color:white;
+            line-height:40px;
+            text-align:center;
+            font-size:15px;
+            border:none;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+     <div class="bigbox">
+            <img class="logo" src="logo.jpg"/>
+            <form method="get" action="http://www.baidu.com">
+            <div>
+                <img src="icon1.jpg"><input type="text" placeholder="请输入用户名" name="用户名">
+            </div>
+            <div>
+                <img src="icon2.jpg"><input type="password" placeholder="请输入密码" name="密码">
+            </div>
+            <div>
+                <img src="icon3.jpg"><input type="text" placeholder="请输入验证码" name="验证码">
+            </div>
+            <div class="box-password">
+                <img src="icon4.jpg">
+                <span><a href="#">忘记密码</a></span>
+            </div>
+            <button class="box-login">登录</button>
+        </form>
+     </div>   
+
+</body>
+</html>

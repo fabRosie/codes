@@ -1,0 +1,278 @@
+body,p,h2,h3,h1,h4,h5,h6,ol,ul,input,dl,dd,button{
+    margin: 0;
+    padding: 0;
+}
+/* 解决图片撑大3像素的问题 */
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*版心 */
+.w1102{
+    width: 1102px;
+    margin: 0 auto;
+}
+/* header */
+.header{
+    height:100px;
+    width:1102px;
+    box-sizing:border-box;
+    padding-top:26px;
+}
+.header img{
+    margin-left:100px;
+    float:left;
+}
+/* search */
+.header form{
+    float:right;
+    height:48px;
+    width:298px;
+    border:1px solid #e0e0e0;
+}
+form input{
+    height:48px;
+    width:243px;
+    padding:9px;
+    box-sizing: border-box;
+    font-size:12px;
+    border:0;
+    float:left;
+    outline:none;
+}
+form button{
+    background:url(images/search.jpg) center center no-repeat;
+    height:48px;
+    width:50px;
+    border:0;
+    cursor:pointer;
+    border-left:1px solid #e0e0e0;
+}
+/* nav */
+.nav{
+    height:49px;
+    background:#2b2b2b;
+}
+.nav ul{
+    padding-left:10px;
+}
+.nav li{
+    float:left;
+    width:119px;
+    height:49px;
+    font-size:15px;
+    line-height:49px;
+    text-align: center;
+    border-right:1px solid #484848;
+    box-sizing: border-box;
+}
+.nav a{
+    color:white;
+}
+.nav .last{
+    margin-right:20px;
+    border:none;
+}
+/* mid */
+.news,.about,.hr{
+    float:left;
+    line-height:1;
+    height:250px;
+    padding-top:37px;
+    box-sizing: border-box;
+}
+.news{
+    width:489px;
+    margin-right:25px;
+}
+.news dt{
+    font-size:17px;
+    margin-bottom:29px;
+}
+.news a{
+    color:#272727;
+}
+.news dd{
+    background:url(images/icon.jpg) no-repeat left center;
+    font-size:12px;
+    padding-left:18px;
+    margin-bottom:12px;
+}
+.news span{
+    float: right;
+    color:#38303b;
+}
+.about{
+    width:347px;
+    background:#f5f5f5;
+    margin-right:1px;
+    padding-left:25px;
+    padding-right:40px;
+    font-weight:normal;
+}
+.about h3{
+    font-size:17px;
+    color:#1f1f1f;
+    margin-bottom:25px;
+}
+.about h4{
+    font-size:12px;
+    color:#747474;
+    line-height:24px;
+    margin-bottom:16px;
+}
+.about span{
+    font-size:12px;
+    color:#9e9e9e;
+    line-height:26px;
+}
+.hr{
+    width:238px;
+    background:#fbfbfb;
+    padding-left:24px;
+    background:url(images/green.jpg) right 126px no-repeat;
+}
+.hr h3{
+    font-size:17px;
+    color:#1f1f1f;
+    font-weight:normal;
+    margin-bottom:25px;
+}
+.hr p{
+    font-size:12px;
+    color:#696969;
+    margin-top:13px;
+}
+.hr img{
+    margin-top:58px;
+}
+/* h5 */
+.h5{
+    height:288px;
+    background:#f5f5f5;
+    overflow:hidden;
+    margin-top:30px;
+    clear:both;
+    border-top:30px solid white;
+}
+.h5>div{
+    margin-top:45px;
+    background:white;
+    box-sizing: border-box;
+    height:196px;
+    width:1055px; 
+}
+.h5 img{
+    border:20px white solid;
+    float:left;
+}
+.h5-1{
+    height:196px;
+    width:738px;
+    float:left;
+    box-sizing: border-box;
+    padding: 26px 37px 0 9px;
+    line-height:1;
+}
+.h5-1 h3{
+    font-size:15px;
+    margin-bottom:24px;
+}
+.h5-1 span{
+    font-size:14px;
+}
+.money{
+    color:#20a548;
+}
+.h5-1 a{
+    color:#4f4d50;
+    font-size:14px;
+    margin-left:44px;
+}
+.h5-1 p{
+    font-size:12px;
+    color:#989d96;
+    line-height:24px;
+    margin-top:18px;
+} 
+/* text */
+.text{
+    height:80px;
+    width:1102px;
+    padding-top:40px;
+    line-height: 1;
+    box-sizing: border-box;
+    border-bottom:1px solid #dcdcdc;
+}
+.text h3{
+    font-size:22px;
+    float:left;
+    color:#343434;
+}
+.text span{
+    float:right;
+    font-size:17px;
+    color:#f14716;
+}
+/* photo */
+.photo{
+    width:1120px;
+    height:335px;
+    margin:0 auto;
+}
+.photo>div{
+    height:290px;
+    width:262px;
+    background:#eff3f6;
+    float:left;
+    margin:15px 9px 0;
+}
+.photo img{
+    margin:18px auto 16px;
+}
+.photo h3{
+    font-size:13px;
+    color:#2e222c;
+    text-align:center;
+    font-style:normal;
+    margin-bottom:11px;
+}
+.photo span{
+    width:142px;
+    height:26px;
+    background-color:#61a1fb;
+    color:white; 
+    line-height:26px;
+    text-align:center;
+    margin:0 auto 15px;
+    display:block;
+    font-size:12px;
+}
+.introduce{
+    width:240px;
+    padding:11px 6px 0px;
+    border-top:1px solid #d5d9dc;
+    color:#5d5a53;
+    box-sizing: border-box;
+    margin:0 auto;
+    font-size:12px;
+    line-height:24px;
+}
+/* bottom */
+.bottom{
+    height:85px;
+    background:#111b24;
+    padding-top:40px;
+}
+.bottom p{
+    color:white;
+    text-align:center;
+    line-height:24px;
+    font-size:12px;
+}

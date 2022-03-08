@@ -1,0 +1,306 @@
+body,p,h2,h3,h1,h4,h5,h6,ol,ul,input,dl,dd,button{
+    margin: 0;
+    padding: 0;
+}
+/* 解决图片撑大3像素的问题 */
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+/*版心 */
+.center{
+    width: 1055px;
+    margin: 0 auto;
+}
+/* head */
+.head{
+    height:58px; 
+    background:#e83828;
+}
+.head>div{
+    overflow:hidden;
+}
+.head>div>img{
+    margin-top:20px; 
+    margin-left:10px;
+    /* margin-right:132px; */
+    float:left;
+}
+/* 导航栏 */
+.head ul{
+    float:right;
+    margin-right:54px;
+    margin-top:27px;
+}
+.head li{
+    padding:0 22px;
+    float:left;
+    line-height:1;
+}
+.head li>a{
+    decoration:none;
+    color:#ffffff;
+    line-height:20px;
+    font-size:12px;
+}
+.head li>a:hover{
+    border-bottom:white 1px solid;
+}
+/* 头部电话号码 */
+.number{
+    float:right;
+    width:250px;
+    /* background:pink; */
+    margin-top:18px;
+}
+.number>img{
+    float:left;
+    margin-right:11px;
+}
+.number>span{
+    margin-left:-7px;
+    color:white;
+}
+/* banner */
+.banner img{
+    width:100%;
+}
+/* 网站功能 */
+.function{
+    height:230px;
+    /* background:pink; */
+}
+.function>div{
+    width:176px;
+    border-right:1px dashed #b0b0b0;
+    /* background:orange;  */
+    text-align: center;
+    line-height:1;
+    float:left;
+    margin-top:13px;
+}
+.function>div>img{
+    margin:0 auto;
+    margin-bottom:7px;
+}
+.function dt{
+    font-size:17px;
+    color:#585858;
+    margin-bottom:18px;
+    cursor:pointer;
+}
+.function dd{
+    font-size:11px;
+    color:#7c7c7c;
+    margin-bottom:11px;
+    cursor:pointer;
+}
+.function .first-box{
+    margin-left:-33px;
+}
+.function .last-box{
+    border:0;
+}
+.function .last-t{
+    margin-bottom:3px;
+}
+/* 案例 */
+.case{
+    height:490px;
+    background:#eeeeee;
+}
+/* 案例文字 */
+.title{
+    display:block;
+    font-size:35px;
+    color:#444444;
+    padding-top:42px;
+    padding-left:14px;
+    padding-bottom:25px;
+    line-height:1;
+    font-weight:bold;
+    box-sizing: border-box;
+}
+.title>span{
+    font-size:20px;
+    font-weight:normal;
+    line-height:1;
+}
+/* 案例盒子 */
+.case>div{
+    height:340px;
+    width:1055px;
+    box-sizing: border-box;
+    padding-left:2px;
+    margin-bottom:10px;
+}
+.case-box{
+    width:320px;
+    height:320px;
+    background:#ffffff;
+    float:left;
+    border:10px solid #eeeeee;
+}
+.case-box h3{
+    margin:15px 20px 2px;
+    color:#222222;
+    font-size:15px;
+    line-height:1;
+    padding-bottom:10px;
+    border-bottom:1px solid #e3e3e3;
+}
+.case-box p{
+    margin-left:20px;
+    margin-right:20px;
+    line-height:24px;
+    font-size:12px;
+    color:#838383;
+}
+/* more */
+.case-box p+a>img{
+    float:right;
+    margin-top:6px;
+    margin-right:20px;
+}
+/* 箭头 */
+.case-box div+img{
+    margin-left:
+}
+/* 查看更多 */
+.case>a>img{
+    margin:0 auto;
+}
+/* 客户 */
+.client{
+    height:198px;
+}
+.client img{
+    border:1px solid #d4d4d4;
+    float:left;
+    margin-right:6px;
+    margin-bottom:46px;
+}
+/* 底部 */
+.bottom{
+    height:345px;
+    /* background:yellow; */
+}
+.about{
+    height:273px;
+    border-right:1px dashed #b9b9b9;
+    /* background:pink; */
+    width:505px;
+    padding-right:42px;
+    box-sizing: border-box;
+    float:left;
+}
+.bottom h3{
+    font-size:22px;
+    color:#444444;
+    line-height:1;
+    margin-top:6px;
+    margin-bottom:37px;
+}
+.about h5{
+    font-size:15px;
+    line-height:1;
+    color:#222222;
+    margin-bottom:27px;
+}
+.bottom p{
+    font-size:11px;
+    line-height:22px;
+    margin-bottom:22px;
+    color:#666666;
+}
+.bottom span>a{
+    font-size:12px;
+    color:#d11417;
+    text-decoration: none;
+}
+.bottom .news{
+    padding-left:35px;
+    float:left;
+}
+.news li{
+    margin-bottom:25px;
+}
+.news>a{
+    font-size:12px;
+    color:#535353;
+    background:url(images/dot.png) no-repeat;
+    padding-left:17px;
+    line-height:1;
+    display:block;
+    margin-bottom:25px;
+    width:460px;
+}
+.news span{
+    float:right;
+}
+/* 版权 */
+.copyright{
+    background:#4f4f4f;
+}
+.copyright p{
+    color:#c1c1c1;
+    font-size:10px;
+    text-align:right;
+    padding-right:31px;
+    line-height:30px;
+}
+/* 尾部 */
+.footer{
+    height:185px;
+    background:#393939;
+    padding-top:35px;
+    color:#9d9d9d;
+}
+.address{
+    width:245px;
+    float:left;
+}
+.address div{
+    height:36px;
+}
+.address img{
+    float:left;
+    margin:5px;
+}
+.address p{
+    font-size:12px;
+    line-height:22px;
+}
+.adress h3{
+    font-size:14px;
+    line-height:1;
+    margin-bottom:4px;
+    font-weight:normal;
+}
+.foot-link{
+    float:right;
+    /* background:cornflowerblue; */
+    /* width:420px; */
+} 
+.foot-link a{
+    color:#b8b8b8;
+    line-height:1;
+}
+.foot-link dl{
+    float:left;
+    margin-left:50px;
+}
+.foot-link dt{
+    font-size:13px;
+    margin-bottom:22px;
+}
+.foot-link dd{
+    font-size:11px;
+    line-height:20px;
+}

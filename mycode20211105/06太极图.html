@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 600px;
+            height: 600px;
+            border: 5px solid black;
+            margin: 30px;
+            border-radius: 50%;
+        }
+        .black{
+            width: 300px;
+            height: 600px;
+            background: black;
+            float: right;
+            border-radius: 0 300px 300px 0;
+        }
+        .white-middle{
+            width: 300px;
+            height: 300px;
+            background: white;
+            margin-left: -150px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .black-middle{
+            width: 300px;
+            height: 300px;
+            background: black;
+            margin-left: -150px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .white-middle div{
+            width: 100px;
+            height: 100px;
+            background: black;
+            margin: 100px;
+            border-radius: 50%;
+        }
+        .black-middle div{
+            width: 100px;
+            height: 100px;
+            background: white;
+            margin: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="black">
+            <div class="white-middle">
+                <div></div>
+            </div>
+            <div class="black-middle">
+                <div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

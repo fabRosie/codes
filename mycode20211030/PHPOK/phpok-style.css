@@ -1,0 +1,279 @@
+body,p,h2,h3,h1,h4,h5,h6,ol,ul,input,dl,dd,button{
+    margin: 0;
+    padding: 0;
+}
+/* 解决图片撑大3像素的问题 */
+img{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/*版心 */
+.center{
+    width: 1000px;
+    margin: 0 auto;
+}
+/* 页面背景颜色 */
+body{background:#f8f8fa;}
+/* 顶部栏 */
+.top{
+    height:34px;
+    background:#2e2e33;
+}
+.top>div{
+    position:relative;
+}
+.top p>a{
+    color:#e7e7e7;
+    font-size:11px;
+    float:left;
+    line-height:34px;
+    margin-right:31px;
+}
+.top p+p{
+    color:white;
+    font-size:12px;
+    float:left;
+    line-height:34px;
+}
+.top form{
+    position:absolute;
+    top:3px;
+    right:0;
+}
+.top input{
+    float:left;
+    height:24px;
+    border:0;
+    outline:none;
+}
+.top button{
+    float:left;
+    border:0;
+    cursor:pointer;
+}
+/* 头部 */
+.head{
+    height:100px;
+}
+.head>div{
+    position:relative;
+}
+.head>div>img{
+    position:absolute;
+    top:24px;
+    left:0;
+}
+.head .nav{
+    float:right;
+    position:absolute;
+    top:47px;
+    right:0;
+}
+.nav li{
+    float:left;
+}
+.nav a{
+    color:#666666;
+    font-size:12px;
+    margin:0 13px;
+    line-height:24px;
+    display:block;
+}
+.nav a:hover{
+    color:#0051ac;
+    border-bottom:3px solid #0051ac;
+}
+/* 大图 */
+.banner img{
+    width:100%;
+}
+/* 中间盒子 */
+.middle-box{
+    height:420px;
+}
+.middle-box>div{
+    width:1020px;
+}
+.middle-box dl{
+    width:320px;
+    padding-top:35px;
+    float:left;
+    margin:0 10px;
+}
+.middle-box dt{
+    background:white;
+    color:#333333;
+    font-size:22px;
+    line-height:1;
+    padding-bottom:6px;
+    border-bottom:2px solid #cccccc;
+    position:relative;
+    margin-bottom:12px;
+}
+.middle-box dt a{
+    color:#00a2e9;
+    font-size:11px;
+    position:absolute;
+    right:0;
+    bottom:13px;
+}
+.middle-box dd a{
+    color:#666666;
+    font-size:12px;
+    line-height:28px;
+    font-weight:normal;
+    width:250px;
+    display:block;
+    height:28px;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    float:left;
+}
+.middle-box dd span{
+    color:#666666;
+    font-size:12px;
+    line-height:28px;
+    float:right;
+}
+/* 成功案例 */
+.case-title{
+    height:71px;
+}
+.case-title h1{
+    font-size:20px;
+    color:#333333;
+    line-height:26px;
+}
+.case-title img{
+    float:right;
+    cursor: pointer;
+}
+/* 成功案例图片 */
+.case-pic{
+    height:1000px;
+    width:1020px;
+    overflow:hidden;
+}
+.case-pic>div{
+    width:320px;
+    height:220px;
+    background:#f1f1f1;
+    float:left;
+    margin:0 10px 40px;
+}
+.case-pic p{
+    margin:15px 0 13px 11px;
+}
+.case-pic a{
+    color:#666666;
+    font-size:12px;
+    line-height:1;
+}
+/* 友情链接 */
+.flink{
+    height:142px;
+}
+.flink p{
+    margin:22px 0 27px;
+}
+.flink p a{
+    color:#333333;
+    font-size:22px;
+    line-height:1;
+}
+.flink span a{
+    color:#666666;
+    font-size:12px;
+}
+/* 底部 */
+.bottom{
+    height:266px;
+    background:#222222;
+}
+.bottom dl{
+    float:left;
+    width:140px;
+    margin-top:37px;
+}
+.bottom dt{
+    margin-bottom:16px;
+    font-size:15px;
+    color:white;
+    line-height:15px;
+}
+.bottom dd{
+    line-height:28px;
+}
+.bottom dd a{
+    color:#8e8e8e;
+    font-size:12px;
+}
+/* 我们一直在进步 */
+.bottom .midlist{
+    width:235px;
+}
+.midlist dd{
+    color:#666666;
+    font-size:10px;
+}
+/* 联系我们 */
+.bottom .contactus{
+    width:200px;
+    /* background:url(images/qqwindow.jpg) no-repeat 100px 18px; */
+    position:relative;
+}
+.contactus dt{
+    color:#e17418;
+}
+.contactus dd{
+    color:#8e8e8e;
+    font-size:12px;
+    background:url(images/mail.jpg) no-repeat left center;
+    padding-left:22px;
+}
+.contactus img{
+    position:absolute;
+    top:18px;
+    right:15px;
+    cursor: pointer;
+}
+.bottom>div{
+    position:relative;
+}
+.bottom>div>img{
+    position:absolute;
+    top:34px;
+    right:-62px;
+    cursor:pointer;
+}
+.bottom>div>img+img{
+    top:94px;
+}
+/* 底部 */
+.footer{
+    height:86px;
+    background:#101010;
+    overflow: hidden;
+}
+.footer img{
+    margin:20px 10px 21px;
+    float: left;
+}
+.footer p{
+    color:#8e8e8e;
+    font-size:12px;
+    float:right;
+    line-height:24px;
+}
+.footer .p1{
+    margin-top:21px;
+}
+.footer p span{
+    color:#666666;
+}

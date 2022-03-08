@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动画</title>
+    <style>
+        div{
+            animation:mymove 5s 3s infinite backwards;
+            animation-timing-function: steps(5);
+            height:500px;
+            width:500px;    
+            margin:50px auto;
+        }
+        @keyframes mymove{
+            0%{background:pink;}
+            20%{background:orange;}
+            40%{background:gold;}
+            60%{background:greenyellow;}
+            80%{background:aqua;}
+            100%{background:plum;}
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

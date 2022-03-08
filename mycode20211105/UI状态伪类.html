@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:enabled{
+            appearance:none;
+            background:blue;
+            border:2px solid black;
+            height:20px;
+            width:20px;
+        }
+        input:checked{
+            appearance: none;
+            background:red;
+        }
+        input:disabled{
+            appearance: none;
+            background:gray;
+            height:20px;
+            width:20px;
+            border:2px solid black;
+        }
+        a[href$="com"]{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    提交<input type="checkbox"></input>
+    提交<input type="checkbox" disabled></input>
+    <div>
+        <div class="div">
+            <a href="http://www.baidu.com">百度一下</a>
+            <a href="http://www.rosie.com">百度两下</a>
+            <a href="http://www.what.com">百度三下</a>
+            <a href="http://www.meinv.com">百度四下</a>
+        </div>
+    </div>
+    <div>
+        <a href="http://www.baidu.com">百度一下</a>
+        <a href="http://www.rosie.com">百度两下</a>
+        <a href="http://www.what.com">百度三下</a>
+        <a href="http://www.meinv.com">百度四下</a>   
+    </div>
+    <a href="http://www.baidu.com">百度一下</a>
+    <a href="http://www.rosie.com">百度两下</a>
+    <a href="http://www.what.com">百度三下</a>
+    <a href="http://www.meinv.com">百度四下</a>
+</body>
+</html>
